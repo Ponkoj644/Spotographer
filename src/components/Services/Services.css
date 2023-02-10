@@ -1,0 +1,40 @@
+.services-area {
+  /* padding: 85px 0;*/
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.section-heading {
+  margin-bottom: 35px;
+  text-align: center;
+}
+.section-heading h2 {
+  font-size: 32px;
+}
+.single-service{
+    border:  1px solid #ededed;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 25px;
+}
+.service-text {
+  padding: 10px;
+}
+.service-text h3 {
+  font-size: 22px;
+}
+.service-text h5{
+    font-size: 16px;
+    font-weight: bold;
+}
+.service-text button{
+    background-color: #7952b3;
+    border: 1px solid #7952b3;
+    color: #fff;
+    padding: 7px 30px;
+    text-transform: capitalize;
+    font-weight: medium;
+}
+.service-text button:hover{
+    background-color: transparent;
+    color: #7952b3;
+    border: 1px solid #7952b3;
+}
