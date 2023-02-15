@@ -1,7 +1,6 @@
 .header .navbar-nav a {
   margin-left: 25px;
 }
-
 .header .navbar-nav a:last-child {
   background-color: #7952b3;
   border: 1px solid #7952b3;
@@ -10,7 +9,13 @@
   border-radius: 6px;
   text-align: center;
 }
-.header .navbar-nav a:last-child:hover{
-    background: transparent;
-    color: #7952b3;
+.header .navbar-nav a:last-child:hover {
+  background: transparent;
+  color: #7952b3;
+}
+
+@media (max-width: 991px) {
+  .header .navbar-nav a {
+    margin-left: 0px;
+  }
 }

@@ -1,3 +1,7 @@
+.carousel-inner {
+  margin-top: 70px;
+}
+
 .slide .carousel-caption {
   bottom: 50px;
 }
@@ -25,4 +29,16 @@
 .slide .carousel-caption button:hover {
   background-color: transparent;
   border: 1px solid #fff;
+}
+@media (max-width: 991px) {
+  .carousel-item img {
+    height: 600px !important;
+    width: auto !important;
+  }
+  .slide .carousel-caption h3 {
+    font-size: 16px;
+  }
+  .slide .carousel-caption h2 {
+    font-size: 23px;
+  }
 }

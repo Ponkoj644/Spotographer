@@ -1,26 +1,24 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Banner from "./components/Banner/Banner";
+import AboutPage from "./components/AboutPage/AboutPage";
+import BlogPage from "./components/BlogPage/BlogPage";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
-import Moments from "./components/Moments/Moments";
-import Services from "./components/Services/Services";
+import HomePage from "./components/HomePage/HomePage";
+import NotFound from "./components/NotFound/NotFound";
 
 function App() {
   return (
     <div className="App">
-      {/* Header area */}
       <Header />
 
-      {/* Banner area */}
-      <Banner />
-
-      {/* Services area */}
-      <Services />
-
-      {/* Moments area */}
-      <Moments />
-
-      {/* Footer area */}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/blog" element={<BlogPage />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
 
       <Footer />
     </div>
@@ -28,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+// 0.42.05

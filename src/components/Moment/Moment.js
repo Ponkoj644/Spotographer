@@ -1,11 +1,11 @@
 import React from "react";
 import Col from "react-bootstrap/Col";
 
-const Moment = (props) => {
+const Moment = ({ item }) => {
   return (
     <Col lg={3}>
       <div className="single-gallary">
-        <img src={props.image} alt="" className="w-100" />
+        <img src={item.img} alt="" className="w-100" />
       </div>
     </Col>
   );
